@@ -1,0 +1,81 @@
+@import "mixin";
+
+.favorite-section {
+    margin-top: 46px;
+
+    .total-title {
+        margin-bottom: 21.65px;
+
+        h1 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #1C1C27;
+        }
+
+    }
+
+    .favorite-product {
+        .headphones {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            >div {
+                @include cardItem;
+
+                &:first-child {
+                    background: url(../img/byz.svg) center no-repeat;
+                    background-position-y: 25px;
+                    .rate {
+                        margin-top: 5px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    background: url(../img/earpods1.svg) center no-repeat;
+                    background-position-y: 25px;
+                }
+
+                &:nth-child(3) {
+                    background: url(../img/earpods2.svg) center no-repeat;
+                    background-position-y: 25px;
+                }
+            }
+
+        }
+
+        .wireless-headphones {
+            display: flex;
+            >div {
+                @include cardItem;
+
+                &:first-child {
+                    background: url(../img/airpods.svg) center no-repeat;
+                    background-position-y: 25px;
+                }
+
+                &:last-child {
+                    background: url(../img/airpods-pro.svg) center no-repeat;
+                    background-position-y: 25px;
+                }
+
+                &:not(div:last-child) {
+                    margin-right: 30px;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .headphones {
+        display: flex !important;
+    }
+    .wireless-headphones {
+        display: flex !important;
+    }
+}

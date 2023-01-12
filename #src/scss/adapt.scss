@@ -1,0 +1,128 @@
+@media screen and (max-width: 1132px) {
+    .container {
+        width: 960px !important;
+    }
+
+    body {
+        header {
+            .choose-model {
+                margin-left: -450px !important;
+            }
+
+            .banner {
+                width: 100%;
+            }
+        }
+
+        .cases {
+            flex-wrap: wrap;
+            justify-content: center !important;
+
+            >div {
+                &:not(div:last-child) {
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .container {
+        width: 768px !important;
+    }
+
+    body {
+        header {
+            .choose-model {
+                margin-left: -250px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .container {
+        width: 560px !important;
+    }
+
+    body {
+        header {
+            .choose-model {
+                margin-left: 0 !important;
+            }
+
+            .banner {
+                p {
+                    width: 163.35px;
+                    font-size: 30px;
+                    line-height: 34px;
+                    // margin-right: -130px !important;
+                }
+            }
+        }
+
+        .headphones {
+            display: none !important;
+        }
+        .headphones-slider {
+            display: flex !important;
+        }
+        
+
+        .wireless-headphones {
+            display: none !important;
+        }
+        .wireless-headphones-slider {
+            display: flex !important;
+        }
+
+        .cases {
+            >div {
+                margin-right: 0 !important;
+            }
+
+            display: none !important;
+        }
+
+        .cases-slider {
+            display: flex !important;
+        }
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .container {
+        width: 400px !important;
+    }
+
+    body {
+        header {
+            .banner {
+                height: 173px;
+                width: 379px;
+                justify-content: flex-end;
+                position: relative;
+                img {
+                    width: 226.64px;
+                    height: 176px;
+                    margin-top: 32px;
+                }
+                p {
+                    width: 163.35px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    position: absolute;
+                    left: 30px;
+                    top: 80px;
+                    // margin-right: -110px !important;
+                }
+            }
+        }
+
+        .headphones-slider {
+            align-items;
+        }
+    }
+}

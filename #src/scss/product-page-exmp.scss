@@ -1,0 +1,167 @@
+@import "mixin";
+
+body {
+    .product-section {
+        .title {
+            margin-top: 25px;
+        }
+
+        .product {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            width: 1110px;
+            padding: 20px 30px 30px 30px;
+            position: relative;
+            margin-bottom: 23px;
+
+            .img-preview {
+                padding-left: 30px;
+                margin-top: 50px;
+            }
+
+            .heart {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                cursor: pointer;
+            }
+
+            .logo2 {
+                position: absolute;
+                top: 10px;
+                left: 1000px;
+            }
+
+            .main-info {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                >p {
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #1C1C27;
+                }
+
+                .total-price {
+                    display: flex;
+                    align-items: center;
+
+                    .price-wth-sale {
+                        margin-right: 30px;
+
+                        .price {
+                            font-weight: 600;
+                            font-size: 28px;
+                            line-height: 34px;
+                            text-align: center;
+                            color: #DF6464;
+
+                        }
+
+                        .prev-price {
+                            text-decoration: line-through;
+                            text-decoration-color: #DF6464;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #AAAAAA;
+                        }
+                    }
+
+                    .sale {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #DF6464;
+                    }
+                }
+
+            }
+        }
+
+        .descriprion-and-btn {
+            display: flex;
+            justify-content: space-between;
+            
+            .product-info {
+                background: #F9F9F9;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+                padding: 25px;
+                width: 824px;
+                position: relative;
+                margin-bottom: 23px;
+
+
+                .title-info {
+                    position: absolute;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                    border-radius: 15px;
+                    width: 824px;
+                    height: 65px;
+                    top: 0;
+                    left: 0;
+
+                    h1 {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #1C1C27;
+                        padding: 20px 0px 0px 20px;
+                    }
+                }
+
+                .characters {
+                    margin-top: 65px;
+
+                    ul {
+                        li {
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #1C1C27;
+
+                            &:not(li:last-child) {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .buttons {
+                .button {
+                    margin-bottom: 15px;
+                    width: 254px;
+                    background: #101010;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+                    border-radius: 10px;
+                    padding: 15px 0px 12px 0px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                .button-cart {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        margin-left: -20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAMwB,IANpB,CACA,gBAAgB,CACZ,QAAQ,CACJ,UAAU,CACN,YAAY,CACR,eAAe,CACX,MAAM,CAAC;EACH,KAAK,EAAE,OAAO;CACjB;;AARzB,AASwB,IATpB,CACA,gBAAgB,CACZ,QAAQ,CACJ,UAAU,CACN,YAAY,CACR,eAAe,CAIX,WAAW,CAAC;EACR,KAAK,EAAE,OAAO;EACd,qBAAqB,EAAE,OAAO;CACjC",
+    "sources": [
+        "../#src/scss/product-page.scss"
+    ],
+    "names": [],
+    "file": "product-page.css"
+}
