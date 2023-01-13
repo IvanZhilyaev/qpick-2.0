@@ -2,6 +2,11 @@ body {
     .empty-cart-section {
         .empty-cart {
             text-align: center;
+            margin-top: 50px;
+
+            img {
+                margin: 0 auto;
+            }
 
             .status {
                 margin-top: 30px;
@@ -40,4 +45,18 @@ body {
             }
         }
     }
+}
+
+@media screen and (max-width: 569px) {
+    .empty-cart {
+        .button {
+            width: 379px !important;
+        }
+
+        p {
+            font-size: 18px !important;
+            margin-bottom: 50px;
+        }
+    }
+
 }

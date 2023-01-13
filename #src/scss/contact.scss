@@ -7,47 +7,44 @@ body {
             .total-contacts {
                 display: flex;
 
-                .contacts {
+                .our-ofice {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                    border-radius: 30px;
+                    width: 760px;
+                    padding: 15px 19.78px 30px 17.7px;
                     margin-right: 61px;
                     margin-left: 100px;
 
-                    .our-ofice {
-                        background: #FFFFFF;
-                        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-                        border-radius: 30px;
-                        width: 760px;
-                        padding: 15px 19.78px 30px 17.7px;
+                    .title-contact {
+                        margin-bottom: 20px;
 
-                        .title-contact {
-                            margin-bottom: 20px;
-
-                            h1 {
-                                font-weight: 600;
-                                font-size: 17px;
-                                line-height: 21px;
-                                color: #1C1C27;
-                            }
-
+                        h1 {
+                            font-weight: 600;
+                            font-size: 17px;
+                            line-height: 21px;
+                            color: #1C1C27;
                         }
 
-                        .info-point {
-                            margin-top: 13px;
-                            background: url(../img/point.svg) center no-repeat;
-                            background-position: left;
-                            padding-left: 30px;
+                    }
 
-                            p {
-                                &:first-child {
-                                    font-weight: 500;
-                                    font-size: 15px;
-                                    line-height: 18px;
-                                }
+                    .info-point {
+                        margin-top: 13px;
+                        background: url(../img/point.svg) center no-repeat;
+                        background-position: left;
+                        padding-left: 30px;
 
-                                &:last-child {
-                                    font-size: 13px;
-                                    line-height: 16px;
-                                    color: #838383;
-                                }
+                        p {
+                            &:first-child {
+                                font-weight: 500;
+                                font-size: 15px;
+                                line-height: 18px;
+                            }
+
+                            &:last-child {
+                                font-size: 13px;
+                                line-height: 16px;
+                                color: #838383;
                             }
                         }
                     }
@@ -96,23 +93,66 @@ body {
                 .total-contacts {
                     flex-direction: column;
 
-                    .contacts {
-                        margin-left: 0 !important;
-                    }
-
                     .social {
                         margin-top: 24px;
                         display: flex;
                         justify-content: space-between;
                         flex-wrap: wrap;
                     }
+                    .our-ofice {
+                        width: 100%;
+                        margin-left: 0 !important;
+                        img {
+                            width: 100%;
+                        }
+                    }
 
 
                 }
+
                 .number {
                     margin-left: 0;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .our-ofice {
+        width: 100% !important;
+        margin-left: 0 !important;
+
+
+        img {
+            width: 100% !important;
+        }
+    }
+
+    .social {
+        >div {
+            width: 169px !important;
+            height: 169px !important;
+
+            img {
+                margin-top: 17px;
+                width: 68px !important;
+                height: 65px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 569px) {
+   
+    .our-ofice {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .number {
+        a {
+            padding-bottom: 100px;
         }
     }
 }

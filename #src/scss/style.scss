@@ -232,7 +232,151 @@ body {
                     transform: translateY(0%);
                     transition: transform 0.5s ease;
                 }
+
             }
+
+            .sec-menu {
+                position: relative;
+                display: none;
+                .cart {
+                    position: absolute;
+                    top: -9px;
+                    left: -80px;
+                    z-index: 999;
+
+                    a {
+                        &:last-child {
+                            position: absolute;
+                            top: -5px;
+                            left: 17px;
+                        }
+                    }
+                }
+                .menu-btn2 {
+                    width: 20px;
+                    height: 18px;
+                    z-index: 999;
+                    position: absolute;
+                    top: -5px;
+                    left: -40px;
+                    overflow: hidden;
+
+                    span {
+                        position: absolute;
+                        width: 20px;
+                        height: 2px;
+                        background: #838383;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: all 0.5s;
+
+                        &:nth-child(2) {
+                            top: calc(50% - 7px);
+                        }
+
+                        &:nth-child(3) {
+                            top: calc(50% + 7px);
+                        }
+                    }
+                }
+
+                .adapt-menu-bar {
+                    width: 294px;
+                    z-index: 10;
+                    position: absolute;
+                    background: #FFFFFF;
+                    border-radius: 0px 0px 0px 20px;
+                    padding: 35px 20.5px 10px 23px;
+                    transition: all 0.5s ease;
+                    left: -294px;
+                    top: -15px;
+                    transform: translateY(-300%);
+                    transition: all 0.5s ease;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+                    &.active {
+                        transform: translateY(0);
+                        transition: all 0.5s ease;
+                    }
+
+                    .menu-btn3 {
+                        height: 23px;
+                    }
+
+                    li {
+                        margin-bottom: 18px;
+                        height: 17px;
+
+                        a {
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #101010;
+                        }
+
+                        &:first-child {
+                            height: 23px;
+                            .choose-model {
+                                margin-left: 0;
+                            }
+                            .menu-for-btn2 {
+                                display: none;
+                                padding-left: 20px;
+                                li {
+                                    &:first-child {
+                                        margin-top: 10px;
+                                    }
+                                    background: none;
+                                    padding-left: 0;
+                                }
+                            }
+
+                            .menu-for-btn2.active {
+                                display: block;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            background: url(../img/heart2.svg) center no-repeat;
+                            background-position: left;
+                            padding-left: 30px;
+                            transition: all 0.5s ease;
+
+                            &.active {
+                                transition: all 0.1s ease;
+                                margin-top: 350px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            background: url(../img/note.svg) center no-repeat;
+                            background-position: left;
+                            padding-left: 30px;
+                        }
+
+                        &:nth-child(4) {
+                            background: url(../img/phone2.svg) center no-repeat;
+                            background-position: left;
+                            padding-left: 30px;
+                        }
+
+                        &:nth-child(5) {
+                            background: url(../img/lang.svg) center no-repeat;
+                            background-position: left;
+                            padding-left: 30px;
+                            height: 18px;
+
+                            span {
+                                &:nth-child(2) {
+                                    color: #FFA542;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
 
             .menu {
                 display: flex;
@@ -286,7 +430,11 @@ body {
     .cases-section {
         margin-top: 44px;
         margin-bottom: 30px;
-
+        transition: 0.41s ease;
+        &.active {
+            margin-top: 300px;
+            transition: all 0.1s ease;
+        }
         .cases {
             display: flex;
             justify-content: space-between;
@@ -322,6 +470,7 @@ body {
 
         .cases-slider {
             display: none;
+
             .glass-case,
             .silicone-case,
             .leather-case {
@@ -397,8 +546,10 @@ body {
                 }
             }
         }
+
         .headphones-slider {
             display: none;
+
             .itc-slider__item {
                 >div {
                     @include cardItem;
@@ -471,8 +622,10 @@ body {
                 }
             }
         }
+
         .wireless-headphones-slider {
             display: none;
+
             .itc-slider__item {
                 >div {
                     @include cardItem;

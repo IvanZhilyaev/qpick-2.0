@@ -209,6 +209,150 @@ body header .navbar .choose-model .menu-for-btn.active {
   transition: transform 0.5s ease;
 }
 
+body header .navbar .sec-menu {
+  position: relative;
+  display: none;
+}
+
+body header .navbar .sec-menu .cart {
+  position: absolute;
+  top: -9px;
+  left: -80px;
+  z-index: 999;
+}
+
+body header .navbar .sec-menu .cart a:last-child {
+  position: absolute;
+  top: -5px;
+  left: 17px;
+}
+
+body header .navbar .sec-menu .menu-btn2 {
+  width: 20px;
+  height: 18px;
+  z-index: 999;
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  overflow: hidden;
+}
+
+body header .navbar .sec-menu .menu-btn2 span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #838383;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+body header .navbar .sec-menu .menu-btn2 span:nth-child(2) {
+  top: calc(50% - 7px);
+}
+
+body header .navbar .sec-menu .menu-btn2 span:nth-child(3) {
+  top: calc(50% + 7px);
+}
+
+body header .navbar .sec-menu .adapt-menu-bar {
+  width: 294px;
+  z-index: 10;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 0px 0px 0px 20px;
+  padding: 35px 20.5px 10px 23px;
+  transition: all 0.5s ease;
+  left: -294px;
+  top: -15px;
+  transform: translateY(-300%);
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+body header .navbar .sec-menu .adapt-menu-bar.active {
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar .menu-btn3 {
+  height: 23px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li {
+  margin-bottom: 18px;
+  height: 17px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:first-child {
+  height: 23px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:first-child .choose-model {
+  margin-left: 0;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:first-child .menu-for-btn2 {
+  display: none;
+  padding-left: 20px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:first-child .menu-for-btn2 li {
+  background: none;
+  padding-left: 0;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:first-child .menu-for-btn2 li:first-child {
+  margin-top: 10px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:first-child .menu-for-btn2.active {
+  display: block;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:nth-child(2) {
+  background: url(../img/heart2.svg) center no-repeat;
+  background-position: left;
+  padding-left: 30px;
+  transition: all 0.5s ease;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:nth-child(2).active {
+  transition: all 0.1s ease;
+  margin-top: 350px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:nth-child(3) {
+  background: url(../img/note.svg) center no-repeat;
+  background-position: left;
+  padding-left: 30px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:nth-child(4) {
+  background: url(../img/phone2.svg) center no-repeat;
+  background-position: left;
+  padding-left: 30px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:nth-child(5) {
+  background: url(../img/lang.svg) center no-repeat;
+  background-position: left;
+  padding-left: 30px;
+  height: 18px;
+}
+
+body header .navbar .sec-menu .adapt-menu-bar li:nth-child(5) span:nth-child(2) {
+  color: #FFA542;
+}
+
 body header .navbar .menu {
   display: flex;
   align-items: center;
@@ -255,6 +399,12 @@ body header .banner img {
 body .cases-section {
   margin-top: 44px;
   margin-bottom: 30px;
+  transition: 0.41s ease;
+}
+
+body .cases-section.active {
+  margin-top: 300px;
+  transition: all 0.1s ease;
 }
 
 body .cases-section .cases {

@@ -2,6 +2,10 @@
   margin-top: 46px;
 }
 
+.favorite-section.active {
+  margin-bottom: 300px;
+}
+
 .favorite-section .total-title {
   margin-bottom: 21.65px;
 }
@@ -13,13 +17,13 @@
   color: #1C1C27;
 }
 
-.favorite-section .favorite-product .headphones {
+.favorite-section .favorite-product .headphones-fav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.favorite-section .favorite-product .headphones > div {
+.favorite-section .favorite-product .headphones-fav > div {
   background-color: #fff !important;
   font-weight: 600;
   font-size: 17px;
@@ -33,83 +37,83 @@
   position: relative;
 }
 
-.favorite-section .favorite-product .headphones > div .heart {
+.favorite-section .favorite-product .headphones-fav > div .heart {
   position: absolute;
   top: 20px;
   left: 20px;
   cursor: pointer;
 }
 
-.favorite-section .favorite-product .headphones > div .main-info {
+.favorite-section .favorite-product .headphones-fav > div .main-info {
   display: flex;
   justify-content: space-between;
 }
 
-.favorite-section .favorite-product .headphones > div .rate {
+.favorite-section .favorite-product .headphones-fav > div .rate {
   display: flex;
   align-items: center;
   margin-top: 25px;
 }
 
-.favorite-section .favorite-product .headphones > div .rate img {
+.favorite-section .favorite-product .headphones-fav > div .rate img {
   margin-right: 10px;
 }
 
-.favorite-section .favorite-product .headphones > div .rate p {
+.favorite-section .favorite-product .headphones-fav > div .rate p {
   padding-top: 3px;
 }
 
-.favorite-section .favorite-product .headphones > div .price {
+.favorite-section .favorite-product .headphones-fav > div .price {
   color: #FFA542;
 }
 
-.favorite-section .favorite-product .headphones > div .prev-price {
+.favorite-section .favorite-product .headphones-fav > div .prev-price {
   color: #FFCE7F;
   text-decoration: line-through;
 }
 
-.favorite-section .favorite-product .headphones > div:nth-child(4) .price {
+.favorite-section .favorite-product .headphones-fav > div:nth-child(4) .price {
   color: #DF6464;
 }
 
-.favorite-section .favorite-product .headphones > div:nth-child(4) .sale {
+.favorite-section .favorite-product .headphones-fav > div:nth-child(4) .sale {
   color: #DF6464;
 }
 
-.favorite-section .favorite-product .headphones > div:nth-child(4) .prev-price {
+.favorite-section .favorite-product .headphones-fav > div:nth-child(4) .prev-price {
   color: #AAAAAA;
   text-decoration: line-through;
   text-decoration-color: #DF6464;
 }
 
-.favorite-section .favorite-product .headphones > div:nth-child(4) .rate {
+.favorite-section .favorite-product .headphones-fav > div:nth-child(4) .rate {
   margin-top: 5px;
 }
 
-.favorite-section .favorite-product .headphones > div:first-child {
+.favorite-section .favorite-product .headphones-fav > div:first-child {
   background: url(../img/byz.svg) center no-repeat;
   background-position-y: 25px;
 }
 
-.favorite-section .favorite-product .headphones > div:first-child .rate {
+.favorite-section .favorite-product .headphones-fav > div:first-child .rate {
   margin-top: 5px;
 }
 
-.favorite-section .favorite-product .headphones > div:nth-child(2) {
+.favorite-section .favorite-product .headphones-fav > div:nth-child(2) {
   background: url(../img/earpods1.svg) center no-repeat;
   background-position-y: 25px;
 }
 
-.favorite-section .favorite-product .headphones > div:nth-child(3) {
+.favorite-section .favorite-product .headphones-fav > div:nth-child(3) {
   background: url(../img/earpods2.svg) center no-repeat;
   background-position-y: 25px;
 }
 
-.favorite-section .favorite-product .wireless-headphones {
+.favorite-section .favorite-product .wireless-headphones-fav {
   display: flex;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div {
+.favorite-section .favorite-product .wireless-headphones-fav > div {
   background-color: #fff !important;
   font-weight: 600;
   font-size: 17px;
@@ -123,79 +127,87 @@
   position: relative;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .heart {
+.favorite-section .favorite-product .wireless-headphones-fav > div .heart {
   position: absolute;
   top: 20px;
   left: 20px;
   cursor: pointer;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .main-info {
+.favorite-section .favorite-product .wireless-headphones-fav > div .main-info {
   display: flex;
   justify-content: space-between;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .rate {
+.favorite-section .favorite-product .wireless-headphones-fav > div .rate {
   display: flex;
   align-items: center;
   margin-top: 25px;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .rate img {
+.favorite-section .favorite-product .wireless-headphones-fav > div .rate img {
   margin-right: 10px;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .rate p {
+.favorite-section .favorite-product .wireless-headphones-fav > div .rate p {
   padding-top: 3px;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .price {
+.favorite-section .favorite-product .wireless-headphones-fav > div .price {
   color: #FFA542;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div .prev-price {
+.favorite-section .favorite-product .wireless-headphones-fav > div .prev-price {
   color: #FFCE7F;
   text-decoration: line-through;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:nth-child(4) .price {
+.favorite-section .favorite-product .wireless-headphones-fav > div:nth-child(4) .price {
   color: #DF6464;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:nth-child(4) .sale {
+.favorite-section .favorite-product .wireless-headphones-fav > div:nth-child(4) .sale {
   color: #DF6464;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:nth-child(4) .prev-price {
+.favorite-section .favorite-product .wireless-headphones-fav > div:nth-child(4) .prev-price {
   color: #AAAAAA;
   text-decoration: line-through;
   text-decoration-color: #DF6464;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:nth-child(4) .rate {
+.favorite-section .favorite-product .wireless-headphones-fav > div:nth-child(4) .rate {
   margin-top: 5px;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:first-child {
+.favorite-section .favorite-product .wireless-headphones-fav > div:first-child {
   background: url(../img/airpods.svg) center no-repeat;
   background-position-y: 25px;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:last-child {
+.favorite-section .favorite-product .wireless-headphones-fav > div:last-child {
   background: url(../img/airpods-pro.svg) center no-repeat;
   background-position-y: 25px;
 }
 
-.favorite-section .favorite-product .wireless-headphones > div:not(div:last-child) {
+.favorite-section .favorite-product .wireless-headphones-fav > div:not(div:last-child) {
   margin-right: 30px;
 }
 
 @media screen and (max-width: 785px) {
-  .headphones {
-    display: flex !important;
+  .headphones-fav {
+    display: block !important;
   }
-  .wireless-headphones {
-    display: flex !important;
+  .headphones-fav > div {
+    margin: 0 auto !important;
+    margin-bottom: 23px !important;
+  }
+  .wireless-headphones-fav {
+    display: block !important;
+  }
+  .wireless-headphones-fav > div {
+    margin: 0 auto !important;
+    margin-bottom: 23px !important;
   }
 }
 /*# sourceMappingURL=favorite.css.map */

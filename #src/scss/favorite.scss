@@ -2,7 +2,9 @@
 
 .favorite-section {
     margin-top: 46px;
-
+    &.active {
+        margin-bottom: 300px;
+    }
     .total-title {
         margin-bottom: 21.65px;
 
@@ -16,7 +18,7 @@
     }
 
     .favorite-product {
-        .headphones {
+        .headphones-fav {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -45,7 +47,7 @@
 
         }
 
-        .wireless-headphones {
+        .wireless-headphones-fav {
             display: flex;
             >div {
                 @include cardItem;
@@ -72,10 +74,19 @@
 }
 
 @media screen and (max-width: 785px) {
-    .headphones {
-        display: flex !important;
+    .headphones-fav {
+        display: block !important;
+        >div {
+            margin: 0 auto !important;
+            margin-bottom: 23px !important;
+        }
     }
-    .wireless-headphones {
-        display: flex !important;
+    .wireless-headphones-fav {
+        display: block !important;
+        >div {
+            margin: 0 auto !important;
+            margin-bottom: 23px !important;
+        }
+        // flex-direction: column !important;
     }
 }

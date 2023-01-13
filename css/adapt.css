@@ -67,10 +67,13 @@
     width: 400px !important;
   }
   body header .banner {
+    pointer-events: none;
     height: 173px;
     width: 379px;
     justify-content: flex-end;
     position: relative;
+    z-index: -3;
+    margin-left: 5px;
   }
   body header .banner img {
     width: 226.64px;
@@ -85,8 +88,29 @@
     left: 30px;
     top: 80px;
   }
-  body .headphones-slider {
-    align-items: flex-start;
+  body header .navbar > div:nth-child(2) {
+    display: none !important;
+  }
+  body header .navbar .menu {
+    display: none !important;
+  }
+  body header .navbar .sec-menu {
+    display: block !important;
+  }
+  body .title h1 {
+    width: 100%;
+  }
+  body .itc-slider__item {
+    width: 379px !important;
+  }
+  body .itc-slider {
+    width: 379px !important;
+  }
+  body .cases-slider, body .headphones-slider, body .wireless-headphones-slider {
+    margin-left: 10px;
+  }
+  body footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=adapt.css.map */

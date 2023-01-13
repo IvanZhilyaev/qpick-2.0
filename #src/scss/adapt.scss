@@ -100,10 +100,13 @@
     body {
         header {
             .banner {
+                pointer-events: none;
                 height: 173px;
                 width: 379px;
                 justify-content: flex-end;
                 position: relative;
+                z-index: -3;
+                margin-left: 5px;
                 img {
                     width: 226.64px;
                     height: 176px;
@@ -119,10 +122,40 @@
                     // margin-right: -110px !important;
                 }
             }
+            .navbar {
+                >div {
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+                .menu {
+                    display: none;
+                }
+
+                .sec-menu {
+                    display: block;
+                }
+            }
+        }
+        .title {
+           h1 {
+            width: 100%;
+           }
         }
 
-        .headphones-slider {
-            align-items;
+        .itc-slider__item {
+            width: 379px !important;
+        }
+        .itc-slider {
+            width: 379px !important;
+        }
+
+        .cases-slider, .headphones-slider, .wireless-headphones-slider {
+            margin-left: 10px;
+        }
+
+        footer {
+            display: none;
         }
     }
 }
